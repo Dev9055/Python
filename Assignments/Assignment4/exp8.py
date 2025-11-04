@@ -1,0 +1,35 @@
+login=str(input('LOGIN: '))
+meter=int(input('METER NO.: '))
+
+string=('Dear Mr.{}, Kindly proceed to generate your meter reciept'.format(login))
+print(string)
+
+c=int(input('Current Bill:Rs '))
+a=int(input('Electricity bill you paid(a):Rs '))
+b=int(input('Electricity bill you paid(b):Rs '))
+unit=int(input("Enter unit: "))
+tb=56000
+q=('{},Kindly find your receipt below.'.format(login))
+print(q)
+dash='_'
+space=' '
+print(dash*110)
+d=("Electricity bill(a) you paid {:<20} Current Bill=Rs{} {:<20} Electricity bill (b) you paid ".format(a,c,b))
+print(d)
+print(space*50,"Total bill paid=Rs56000")
+print(dash*110)
+if(a<=c) and (b>=c):
+    o=('{}{:>80}'.format(a,b))
+    print(o)
+e=("{:>55},Rs56000".format(c))
+print(e)
+f=("Bill to be Paid(Balance)(D):{:^50.2f}{:.2f}".format((c-a),(c-b)))
+print(f)
+g=("Total payment received till date: {:>15}+{:.2f}{:.2f} ".format(tb,(c-a),(c-b)))
+print(g)
+h=("Unit Consumed {:^80}".format(unit))
+print(h)
+i=("System accepted units:{:^65b}".format(unit))
+print(i)
+print("City Weather:Dehradun weather is 12\u00b0 C")
+print(dash*110)

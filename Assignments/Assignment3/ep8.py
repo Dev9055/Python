@@ -1,0 +1,9 @@
+x=3
+y=2
+print("before swapping")
+print("x=",x)
+print("y=",y)
+(x,y)=(y,x)
+print("after swapping")
+print("x=",x)
+print("y=",y)

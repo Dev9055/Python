@@ -1,0 +1,6 @@
+names = ("Dev", "Sam", "Ram")
+ages = (19, 30, 35)
+person_info = tuple(zip(names, ages))
+print(f"after zipping:\n {person_info}",)
+name,age=zip(* person_info)
+print(f"after unpacking: \n name: {name},age: {age}")
